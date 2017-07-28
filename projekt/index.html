@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>Project</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<script type="text/javascript">
+			$("#clone").click(function() {
+	    	$(".cloned-row:first").clone().insertAfter(".cloned-row:last");
+			});
+		</script>
+
+
+	</head>
+
+	<body>
+		
+		
+        <div class="border">
+			
+			<div class="row, top">
+				
+				<div class="col-xs-12 col-md-12 CAA">
+
+					<img src="img/CAA.jpg" height:"130px" width="170px">
+				</div>
+			</div>	
+					
+
+				<div class="row info">	
+					
+					<section><h1>ATS OCCURRENCE REPORT</h1></section>					
+				    
+		         </div>	
+        </div>
+
+		
+
+
+				<div class="row entire">
+				   <div class="row">
+					  <div class="col-md-1"></div>
+					  <div class="col-md-3">
+					    <p><b>CATEGORIES OF OCCURRENCE</b></p>
+					  </div>
+				    </div>
+						
+
+		            <div class="row">
+						<div class="col-md-1"></div>
+		                 
+		                <div class="col-md-2">
+		                   <label class="checkbox-inline"><input type="checkbox" name="">Accident</label>
+		                </div>
+
+		                <div class="col-md-2">
+							<label class="checkbox-inline"><input type="checkbox" name="">Airprox</label>
+						</div>
+						
+						<div class="col-md-2">	
+							<label class="checkbox-inline"><input type="checkbox" name="">Incident</label>
+						</div>
+						
+						<div class="col-md-2">	
+							<label class="checkbox-inline"><input type="checkbox" name="">Infringement</label>
+						</div>	
+
+					</div>	  
+
+
+                        
+
+                    <div class="row">
+                         <div class="col-md-1"></div>
+                         
+                         <div class="col-md-2">
+	                         <p><b>Occurrence Position*</b></p>
+			                 <input type="number" id="Occurrence Position">
+						</div>
+
+						<div class="col-md-2">
+
+	                        <p></p>
+							<label class="checkbox-inline"><input type="checkbox" name="">FL</label>
+							<label class="checkbox-inline"><input type="checkbox" name="">ALT/HT (FT)</label>
+							<input type="text" name="FT">
+						</div>
+
+
+						<div class="col-md-2">
+							<p><b>Date</b>
+							</p><input type="date" name="date">
+					    </div>
+
+                        <div class="col-md-2">
+							<p><b>Time</b>
+							</p><input type="time" name="time" id="Time">
+					    </div>
+
+
+					   <div class="col-md-2">
+					   	<p><b>Day/Night</b></p>
+					   	<select id="select">
+					   		<option>Day</option>
+					   		<option>Night</option>
+					   	</select>
+					   </div>
+
+					   <div class="col-md-1"></div>
+
+                    </div>	
+
+
+                    <div class="cloned-row">
+	                    <div class="row">
+		                    <div class="col-md-1"></div>
+		                     <div class="col-md-2">
+								<p><b>Operator
+								</b></p><input type="number" id="Operator" name="operator"></li>
+							 </div>
+
+							 <div class="col-md-2">	
+								<p><b>CallSign/REGN*</b></p>
+								<input type="number" id="CallSign/REGN">
+							 </div>
+
+							 <div class="col-md-1">	
+								<p><b>Type*</b></p>
+								<input type="number" id="Type"></li>
+							 </div>
+
+							 <div class="col-md-1">
+								<p><b>From:</b></p>
+								<input type="text" id="From"></li>
+							  </div>
+
+							 <div class="col-md-1">
+								<p><b>To:</b></p>
+								<input type="text" id="To"></li>
+							 </div>
+
+							  <div class="col-md-1">
+								<p><b>SSR Code*</b></p>
+								<input type="text" id="SSR"></li>
+							 </div>
+
+							 <div class="col-md-1">
+								<p><b>Mode C*</b></p>
+								<select id="Mode">
+									<option>Yes</option>
+									<option>No</option>
+								</select>
+							 </div>
+
+							 <div class="col-md-1">
+		                        <p><b>Choose*</b></p>
+								<select id="Choose">
+									<option>IFR</option>
+									<option>VFR</option>
+									<option>SVFR</option>
+								</select>
+		                     </div>
+
+		                     <div class="col-md-1"></div>
+
+						</div>
+					</div>	
+
+					<div class="row">
+						<div class="col-md-1"></div>
+	                        <div class="col-md-2">
+	                         <button id="clone" value="clone">Add another</button>	
+	                        </div>
+					</div>
+
+
+
+
+					<div class="row">
+
+					   <div class="col-md-1"></div>
+
+						<div class="col-md-2">
+							<p><b>RTF Frequencies*</b></p>
+							<input type="text" id="RTF-frequencies">
+						</div>
+
+						<div class="col-md-2">
+							<p><b>Radar Equipment*</b></p>
+							<input type="text" id="Radar Equipment">
+	                    </div>
+
+	                    <div class="col-md-3">
+
+							<p><b>Equip. Unserv.</b></p>
+							<input type="text" name="Equipment" id="Equipment">
+	                    </div>
+
+	                    <div class="col-md-1">
+							<p><b>QNH</b></p>
+							<input type="text" name="QNH" id="QNH">
+	                    </div>
+
+	                    <div class="col-md-2">
+							<p><b>Runway</b></p>
+							<input type="text" name="Runway">
+						</div>
+
+                        <div class="col-md-1"></div>
+	                     
+					</div>
+                       
+
+                   
+
+
+
+                   <div class="row">
+                     <div class="col-md-1"></div>
+						
+                     <div class="col-md-2">
+						<p><b>Class of Airspace*</b></p>
+						    <select id="select">
+							    <option>A</option>
+							    <option>B</option>
+							    <option>C</option>
+							    <option>D</option>
+							    <option>E</option>
+							    <option>F</option>
+							    <option>G</option>
+							</select>    
+                     </div>
+
+                     <div class="col-md-2">
+
+						<p><b>Type of Airspace*</b></p>
+                           
+                           <select>
+                           <option>ATZ</option>
+						    <option>CBA</option>
+						    <option>CTA</option>
+						    <option>CTR</option>
+						    <loption>CVSM</option>
+						    <option>TMA</option>
+						    <option>RVSM</option>
+						    <option>TSA</option>
+						    
+						    <option>Prohibited area</option>
+						    <option>Transitional area</option>
+						    <option>Restricted area</option>
+						    <option>Danger area</option>
+						    <option>Other</option>
+					        <option>Unknown</option>
+					     </select>
+					  </div>   
+						       
+
+
+
+                     <div class="col-md-2">
+		              <p><b>TYPE OF ATS SERVICE*</b></p>
+		                    <select>
+		                       <option>ATZ</option>
+							    <option>Radar</option>
+							    <option>Aerodrome</option>
+							    <option>Approach</option>
+							    <option>Area </option>
+							    <option>Other</option>
+							    <option>Procedural Control</option>
+							    <option>Radar Control</option>
+							    
+							    <option>Radar Service</option>
+							    <option>Traffic Service</option>
+							    <option>Basic Service</option>
+							    <option>ADC</option>
+							    <option>GMC</option>
+							    <option>ALR</option>
+							</select>
+		              </div>
+          
+
+	                  <div class="col-md-2">
+	                	<p><b>SID/STAR/ROW</b></p>
+	                	<input type="text" name="">
+	                  </div>
+
+	                  <div class="col-md-1"></div>
+
+                    </div>
+
+
+
+
+
+           
+			        <div class="row">
+
+		              <div class="col-md-1"></div>
+
+		              <div class="col-md-2"> 
+			               <p><b>Was prescribed separation lost? </b></p>
+		                     <select>
+				               <option>Yes</option>
+							   <option>No</option>
+							 </select>  
+                       </div>
+
+	                   <div class="col-md-2">
+	                      <p><b>Min Separation*</b></p>
+						  Horizontal:<input type="number" name="Horizontal" id="Horizontal">NM
+					      Vertical:<input type="number" name="Vertical" id="Vertical">ft
+					   </div>
+					  
+					  <div class="col-md-2">  
+                           <p><b>Alert Activation*</b></p>
+						      <select>
+						        <option>Collision</option>
+							    <option>Conflict Alert</option>
+							    <option>TCAS</option>
+							    <option>STCA</option>
+							    <option>SMF</option>
+							  </select>  
+	                  </div>
+
+
+	                   <div class="col-md-2">
+						   <p><b>Traffic info given by ATC*</b></p>
+	                       <select>
+			                   <option>Yes</option>
+							   <option>No</option>
+							</select>
+	                    </div>
+
+	                   <div class="col-md-2">
+	                    <p><b>Avoiding action by ATC? </b></p>
+	                        <select>
+							   <option>Yes</option>
+							   <option>No</option>
+							</select>
+	                   </div> 
+
+	                   <div class="col-md-1"></div> 
+		            </div>   
+
+
+			               
+
+			  
+
+				    <div class="row">
+				       <div class="col-md-1"></div>
+				       <div class="col-md-4">
+	                       <p>BRIEF TITLE <br>Summary</p>
+						   <input type="text" name="Summary" id="Summary">
+					   </div>
+				   </div>	   
+                     
+                   <div class="row">
+                      <div class="col-md-1"></div>
+                      <div class="col-md-10">
+						 <div class="form-group">
+						    <label for="exampleTextarea"><p><b>Narrative</b></p></label>
+						    <textarea class="form-control" id="Narrative" rows="3"></textarea>
+						 </div>
+					   </div>	
+					   <div class="col-md-1"></div>
+				   </div>
+                    
+
+	                <div class="row">
+	                  <div class="col-md-1"></div>
+
+	                   <div class="col-md-2">
+	                      <p><b>Name:</b></p>
+	                      <input type="text" name="Horizontal">
+						</div>
+
+	                   
+	                    <div class="col-md-2">
+						  <p><b>On duty as:</b></p>
+
+						  <input type="text" name="Horizontal">
+					    </div>	
+
+	                   
+	                   <div class="col-md-2">
+						   <p><b>ATS Unit*</b></p>
+	                       <input type="text" name="Horizontal">
+					   </div>	
+
+	                    
+	                    <div class="col-md-2">
+							<p><b>Since last break</b></p>
+							<input type="time" name="time-local" id="Time">
+					    </div>		
+
+
+					    <div class="col-md-2">
+							<p><b>Start time of shift</b></p>
+							<input type="time" name="datetime-local" id="Time">
+					    </div>
+
+	                    <div class="col-md-1"></div>
+	                </div>
+
+
+
+
+	               <div class="row">
+
+	                 	
+	                  <div class="col-md-1"></div>
+
+	                   <div class="col-md-2">
+		                   <p><b>Radar recordings Held*</b></p>
+	                        <select id="select">
+		                     <option>Yes</option>
+							 <option>No</option>
+							</select>
+						</div>
+
+
+	                    <div class="col-md-2">
+		                    <p><b>RTF recordings Held* </b></p>
+	                         <select id="select">
+			                     <option>Yes</option>
+								 <option>No</option>
+							 </select>
+						</div>
+
+
+	                    <div class="col-md-4">
+		                    <p><b>List other agencies advised*</b></p>
+		                    <input type="text" name="Advised" id="Advised">
+
+		                </div> 
+
+		                <div class="col-md-2">
+	                      <p><b>Date</b></p> 
+	                      <input type="date" name="date" id="Date">
+	                    </div>
+
+	                  <div class="col-md-1"></div>
+	                </div>     
+
+
+
+
+
+	                <div class="row">
+
+	                  
+	                	<div class="col-md-1"></div>
+
+	                    <div class="col-md-4"> 
+	                       <p><b>Adress*</b></p> 
+	                       <input type="text" name="Adress" id="Adress">
+	                    </div>
+
+
+	                    <div class="col-md-3">
+	                     
+	                      <p><b>E-mail:</b></p>  
+	                      <input  type="text"  name="email"  id="E-mail">
+	                    </div>
+
+					    <div class="col-md-3">
+	                        <p><b>Telephone:</b></p>
+		                    <input  type="text"  name="number"  id="Tel">
+		                </div>
+	                      
+	                    <div class="col-md-1"></div>
+	                </div>
+
+	            </div>
+	    
+
+                <div class="row rules">
+                <div class="col-md-1"></div>
+                  <section>
+                	<h4>REPORTING TIME</h4>
+
+					<p>Report must be dispatched within 72 hours of the event unless exceptional circumstances prevent this.</p>
+
+
+					<p>ACKNOWLEDGEMENT OF REPORTS</p>
+
+					If, acknowledgement of reports is required, please contact the CAAK direct on e-mail: <i>mor@caa-ks.org</i> or mobile number:<i> +377 (0)44 613 567</i>
+
+
+					<p>UNIT MANAGEMENT ACTION</p>
+
+					Reporters are requested to send a copy to the Unit Management. This is for local assessment and any immediate follow-up action. Additional input and/or covering comment from Unit Management is highly desirable for both Safety Data evaluation and any follow-up investigation.
+
+
+				</section>
+				 <div class="col-md-1"></div>
+               </div>
+    </body>
+
+        <script src="js/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css"></link>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</html>

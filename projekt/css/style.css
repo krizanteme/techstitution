@@ -1,0 +1,147 @@
+
+
+body{
+	margin: 0px 100px 100px 80px;
+	font-style: lato;
+	
+}
+
+.border{
+	text-align:center;
+    border-bottom-style: double;
+    border-bottom-color: #21b7f1;
+    border-bottom-width: 6px;
+    word-wrap: break-word;
+    
+}
+
+.navbar{
+	
+	background-color:rgba(48, 209, 247, 0.13);
+}
+
+b, strong {
+	
+	font-family: lato;
+	font-size: 14px;
+	font-weight: 500;
+
+}
+
+input{
+	    border: 1px solid #538fc3;;
+        border-radius: 5px;
+}
+
+input:focus {
+    outline: none !important;
+    
+    box-shadow: 0 0 5px #538fc3;;
+}
+
+.info{ 
+    color: black;
+    font-size:18px;
+
+}
+
+body{
+	background:#f6f6f6;
+	text-align:left;
+}
+
+.border{
+	background-color: white;
+}
+
+.title{
+	padding-top: 40px;
+	font-weight: bold;
+	color: #21b7f1;
+}
+
+hr{
+	margin-top: 0px;
+}
+
+.period >p{
+	text-align: center;
+	
+}
+
+section {
+	font-size: 16px;
+	
+}
+
+.certifications{
+	padding: 20px;
+}
+
+li{ font-size: 17px;}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+p{
+padding-top: 40px;
+margin: 0 0 5px;
+}
+
+img{
+	margin-bottom: 30px;
+	margin-top: 12px;
+}
+
+#Type,#From, #To, #SSR, #Equipment, #QNH, #Time, #Date, #Advised, #Adress, #E-mail, #Tel,#Choose,#Mode,#Summary,#Narrative
+{
+  width: 100%;
+}
+
+#Narrative{
+	max-width: 100%;
+}
+
+#select{
+	width: 50%;
+}
+
+
+#Vertical, #Horizontal{
+	width: 20%;
+}
+
+#Horizontal{
+	margin-bottom: 4px;
+}
+
+#Vertical{
+	margin-left: 17px;
+}
+
+select{
+	border: 1px solid #538fc3;;
+        border-radius: 5px;
+}
+
+.checkbox-inline>input{
+	width: 13px;
+	height:13px; 
+}
+
+button{
+	margin-top: 20px;
+}
+
+.rules>section{
+	margin-top: 70px;
+	text-align:left;
+	margin-left: 100px;
+	
+	
+}
+
+i{
+	color: blue;
+}
+
